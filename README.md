@@ -1,33 +1,35 @@
 # dinnerTonight
-## Answering the eternal question; What's for dinner tonight?
+#### Answering the eternal question; What's for dinner tonight?
+#### By Jeffrey Press
 
-### Description
-This is a simple javascript program intended to run in Node. It is following the briefing from the Codecademy project titled "Mixed Messages", which I have reproduced at the end of this document.
+## Description
+This simple app was built to practice manipulating strings and arrays of strings.<br>
+I expect it to carry out the following behaviors:<br>
+&emsp;**Behavior:** Program runs once, displays output, then stops<br>
+&emsp;**Input:** Run the program, no other input required.<br>
+&emsp;**Output:** A _madlibs_-style sentence made of several random adjectives is displayed to console, followed by a list of meal courses that correspond with those adjectives.<br>
 
-When run, the program displays a randomly generated menu consisting of an appetizer, main course and side, and a dessert, along with a *mad-libs* style summary sentence generated from adjectives related to the specific foods that were randomly chosen, to whet the user's appetite.
+## Specs
++ Create arrays of strings
++ Create methods to choose items randomly from string arrays.
++ Create methods that format and display the random data into a coherent message.
 
-The food/adjective pairs are stored in hard-coded arrays, and the messages are displayed to the console.
+## Setup/Installation Requirements
++ Fork and clone this repository locally.
++ Install Node
++ Navigate to folder and run `node dinnerTonight.js` in your console.
 
-<br>
+## Known Bugs
++ None
 
-### Future extension ideas:
-*Read data from files instead of hard-coded arrays, which would make it easier to add more foods to expand the users options.
-*Create a front-end for a more readable and web-friendly user experience. (HTML/CSS)
+## Support and contact details
+Please contact j.michael.press@gmail.com with questions, comments, or concerns. You are also welcome to submit a pull request.
 
-<hr>
+## Technologies Used
+   + Javascript
+   + Node.js
 
-### Original Project Briefing
-For this project, you will build a message generator program. Every time a user runs a program, they should get a new, randomized output. You’re welcome to take the project in a couple of different forms, like an astrology generator, inspirational message, or nonsensical jokes. To make your program truly random, the message that it outputs should be made up of at least three different pieces of data. Take what you know of JavaScript syntax so far to build the program and customize it to your liking.
+### License
+This software is released under the GNU general public license.
 
-Project Objectives:
-
-   + Build a message generator program using JavaScript
-   + Use Git version control
-   + Use command line
-   + Develop locally on your computer
-
-Prerequisites:
-
-   + JavaScript
-   + Git and GitHub
-   + Command line
+Copyright (c) 2022 Jeffrey Michael Press

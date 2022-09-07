@@ -1,3 +1,4 @@
+//Data structures
 const apps=[
     ['Veggies & dip', 'crisp'],
     ['Pita & hummus', 'pillowy'],
@@ -32,6 +33,11 @@ const desserts=[
     ['Cherry pie', 'sweet']
 ];
 
+//Randomizer functions
+function numGen(max){
+    return Math.floor(Math.random()*max);
+}
+
 function randomApp(){
     const newApp = numGen(apps.length);
     return apps[newApp]; 
@@ -52,10 +58,7 @@ function randomDessert(){
     return desserts[newDessert];
 }
 
-function numGen(max){
-    return Math.floor(Math.random()*max);
-}
-
+//Data manipulation functions
 function splitArray(fullArray, index){
     //takes in an array of arrays; returns a new array that contains the 'index' element of the internal arrays from fullArray 
     //fullArray, 0 returns first element of each inner array in a new array
@@ -68,7 +71,7 @@ function splitArray(fullArray, index){
     return subArray;
 }
 
-
+//Data display functions
 function generateSummary(adjArray){
     const sumString = `Tonight, start things off with a ${adjArray[0]} experience, followed by some ${adjArray[1]}, ${adjArray[2]} goodness, and round it all out with something a little ${adjArray[3]}.` 
     //This function takes in an array of four Adjectives and creates a random menu madlib around them.
